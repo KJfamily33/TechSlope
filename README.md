@@ -1,4 +1,4 @@
-## ![Our Logo](./assets/logo.png)
+## ![Our Logo](./assets/cover_header.png)
 # Product Name
 
 Commercial Real Estate Development Predictive Analytics
