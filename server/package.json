@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend for API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.16.4",
+    "path": "^0.12.7",
+    "sqlite3": "^4.0.6",
+    "umzug": "^2.2.0"
+  }
+}
