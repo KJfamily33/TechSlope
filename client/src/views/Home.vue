@@ -1,13 +1,14 @@
 <template>
-  <HelloWorld />
+  <WelcomeHeader />
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+  import WelcomeHeader from '../components/WelcomeHeader'
 
   export default {
+    name: "Home",
     components: {
-      HelloWorld
+      WelcomeHeader
     }
   }
 </script>

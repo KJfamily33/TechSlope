@@ -2,16 +2,16 @@
   <v-app>
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span>Property</span>
+        <span class="font-weight-light">Usage</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        href="https://github.com/GoCodeColorado/TechSlope"
         target="_blank"
       >
-        <span class="mr-2">Latest Release</span>
+        <span class="mr-2">GitHub</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-toolbar>
