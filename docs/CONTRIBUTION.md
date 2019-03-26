@@ -4,27 +4,39 @@ First of all GitHub itself has some excellent [guides](https://guides.github.com
 
 ##### **Issue/Milestone → New Branch → Commits → Pull Request → Review → Merge**
 
-### Prerequisites
+## Prerequisites
 
-[Node.js, NPM](https://nodejs.org/en/), Git Manager ([git-Bash](https://git-scm.com/downloads) or other), [Vue CLI](https://cli.vuejs.org/guide/prototyping.html) *(recommended)*
+Install the following for the development enviorment...
 
-### Client Development
+- [Node.js, NPM](https://nodejs.org/en/)
+- Git Manager ([git-Bash](https://git-scm.com/downloads) or other)
+- [Vue CLI](https://cli.vuejs.org/guide/prototyping.html) *(recommended)*
+
+## Development
 
 1. The repository is first cloned with `git clone https://github.com/GoCodeColorado/TechSlope.git`.
 
-2. All the dependencies from [NPM](https://docs.npmjs.com/about-npm/) will need to be installed by running `npm run installProject`.
+2. All the dependencies from [NPM](https://docs.npmjs.com/about-npm/) will need to be installed by running `npm run installProject`.  **simply runs `npm install` in both client and server directory*
 
-3. Run `npm dev` to start a live development server of **only the client**.
+#### Client
 
-4. The client development is done in the 'src' folder.
+3. From root run `npm run dev` to start a live development server of **only the client**.
 
-**More information on client development can be found in the client README.md*
+4. The client development is all done in the 'src' folder.
 
-### Deployment
+**`npm run build` from inside the client folder to make a 'dist' required for server.*
+
+#### Server
+
+5. Once the client is built and installations have been done running `npm start` from the 'server' directory will only start the server.
+
+**More information on development and commands can be found in the client or server README.md respectively*
+
+## Deployment
 
 Running `npm start` from root directory will install all dependencies, build the client, and launch the server.
 
-### Before Making Pull Requests
+## Before Making Pull Requests
 - Document and comment your code.
 - Increase the version numbers in any package.json and the README.md to the new version that this
    Pull Request would represent. The versioning scheme we use is [Semantic Versioning](http://semver.org/).
