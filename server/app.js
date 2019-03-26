@@ -1,15 +1,20 @@
 /************ PropUp - SERVER *************/
-/* Server webpages and manages endpoints.
+/* Serve webpages and manages endpoints.
 /* Copyright 2019                         */
 
 //import depencies
-var fs = require('fs');
-var path = require('path');
-var ascii = require('./assets/ascii')
+const  fs = require('fs');
+const  path = require('path');
+const  ascii = require('./assets/ascii')
 const history = require('connect-history-api-fallback');
 const express = require('express');
 const bodyParser = require('body-parser');
 const sqlite3 = require('sqlite3').verbose();
+const cors = require("cors");
+const nodemailer = require("nodemailer");
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 var today = new Date();
 
