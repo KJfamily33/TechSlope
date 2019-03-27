@@ -10,4 +10,4 @@
 * Traffic
 * Machine learning
 
-#### Note: all GeoJSON datasets were converted from original sources with [FWTools 2.4.7](http://fwtools.maptools.org/)
+#### Note: all GeoJSON datasets were converted from original sources with [FWTools 2.4.7](http://fwtools.maptools.org/) with built-in GDAL/OGR subpackage.
