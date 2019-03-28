@@ -14,6 +14,7 @@
     "axios": "^0.18.0",
     "register-service-worker": "^1.6.2",
     "roboto-fontface": "*",
+    "rss-parser": "^3.7.0",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
     "vuetify": "^1.5.5",

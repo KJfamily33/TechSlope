@@ -5,14 +5,6 @@
     wrap
     class="white--text"
     >
-    <transition-group
-    name="staggered-fade"
-    tag="ul"
-    v-bind:css="false"
-    v-on:before-enter="beforeEnter"
-    v-on:enter="enter"
-    v-on:leave="leave"
-    >
     <v-flex xs4 mb-4 v-for="(card, index) in cards" :key="index">
       <v-card
       light
@@ -40,7 +32,6 @@
   </v-card-text>
 </v-card>
 </v-flex>
-</transition-group>
 </v-layout>
 </v-container>
 </template>
@@ -50,9 +41,9 @@
 export default {
   name: "linkCards",
   data: () => ({
-    cards: [{title: "Explore Our APIs", icon: "database", link: "about", theme: "#114fa5", content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."},
-    {title: "The Documentation", icon: "book", link: "docs", theme: "#12a365", content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
-    {title: "Examples", icon: "help", link: "about", theme: "#e1781c", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}]
+    cards: [{title: "Explore Our API", icon: "API", link: "about", theme: "#114fa5", content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."},
+    {title: "Documentation", icon: "book", link: "docs", theme: "#12a365", content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+    {title: "Support", icon: "help", link: "support", theme: "#e1781c", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}]
   }),
   methods: {
     beforeEnter: function (el) {

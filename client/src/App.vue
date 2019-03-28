@@ -1,27 +1,97 @@
 <template>
-<v-app>
-<v-toolbar app color=transparent dark flat class="elevation-0">
-<v-toolbar-title class="text-uppercase">
-<span>Property</span>
-<span class="font-weight-light">Usage</span>
-</v-toolbar-title>
-<v-spacer></v-spacer>
-<router-link to="about"><v-btn flat >APIs</v-btn></router-link>
-<router-link to="about"><v-btn flat >Documentation</v-btn></router-link>
-<router-link to="about"><v-btn flat >Pricing</v-btn></router-link>
-<router-link to="about"><v-btn flat >About</v-btn></router-link>
-<v-spacer></v-spacer>
-<v-btn outline
-href="https://github.com/GoCodeColorado/TechSlope"
-target="_blank"
->
-<v-icon>mdi-lock-outline</v-icon>
-<span class="text-uppercase mr-2">Login</span>
-</v-btn>
-</v-toolbar>
+  <v-app>
+    <v-toolbar app color=transparent dark flat class="elevation-0">
+      <v-toolbar-title class="text-uppercase">
+        <router-link to="/" style="color: white">
+          <span>Property</span>
+          <span class="font-weight-light">Usage</span>
+        </router-link>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <router-link to="apis"><v-btn flat >APIs</v-btn></router-link>
+      <router-link to="documentation"><v-btn flat >Documentation</v-btn></router-link>
+      <router-link to="pricing"><v-btn flat >Pricing</v-btn></router-link>
+      <router-link to="about"><v-btn flat >About</v-btn></router-link>
+      <v-spacer></v-spacer>
+      <v-btn outline
+      @click.stop="loginDialog = true"
+      target="_blank"
+      >
+      <v-icon>mdi-lock-outline</v-icon>
+      <span class="text-uppercase mr-2">Login</span>
+    </v-btn>
+  </v-toolbar>
 
-<v-content class="homeGradient">
-<router-view/>
+  <v-content>
+    <transition name="page" mode="out-in">
+      <router-view/>
+    </transition>
+    <v-dialog
+    v-model="loginDialog"
+    max-width="290"
+    >
+    <v-card>
+      <v-tabs
+      v-model="active"
+      color="white"
+      light
+      slider-color="grey"
+      >
+      <v-tab ripple :key="login">
+        Login
+      </v-tab>
+      <v-tab ripple :key="signup">
+        Sign Up
+      </v-tab>
+      <v-tab-item
+      :key="login"
+      >
+            <v-container>
+              <v-flex xs-12>
+      <v-form
+      ref="form"
+      v-model="valid"
+      lazy-validation
+      >
+      <v-text-field
+      v-model="name"
+      :counter="10"
+      :rules="nameRules"
+      label="Name"
+      required
+      ></v-text-field>
+
+      <v-text-field
+      v-model="email"
+      :rules="emailRules"
+      label="E-mail"
+      required
+      ></v-text-field>
+      <v-btn
+      color="green"
+      dark
+      @click="resetValidation"
+      >
+      Login
+    </v-btn>
+  </v-form>
+  <v-btn block color="red" dark>Google</v-btn>
+  <v-btn block color="blue" dark>LinkedIn</v-btn>
+  <v-btn block color="blue" dark>Facebook</v-btn>
+</v-flex xs-12>
+</v-container>
+</v-tab-item>
+<v-tab-item
+:key="signup"
+>
+<v-card flat>
+  <v-card-text>{{ text }}</v-card-text>
+</v-card>
+</v-tab-item>
+</v-tabs>
+
+</v-card>
+</v-dialog>
 </v-content>
 </v-app>
 </template>
@@ -32,7 +102,7 @@ export default {
   name: 'App',
   data () {
     return {
-      //
+      loginDialog: false,
     }
   }
 }

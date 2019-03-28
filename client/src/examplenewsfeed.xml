@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title><![CDATA[BBC News - Home]]></title>
+        <description><![CDATA[BBC News - Home]]></description>
+        <link>https://www.bbc.co.uk/news/</link>
+        <image>
+            <url>https://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
+            <title>BBC News - Home</title>
+            <link>https://www.bbc.co.uk/news/</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Thu, 28 Mar 2019 12:55:07 GMT</lastBuildDate>
+        <copyright><![CDATA[Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.]]></copyright>
+        <language><![CDATA[en-gb]]></language>
+        <ttl>15</ttl>
+        <item>
+            <title><![CDATA[Brexit: Process in deadlock as MPs seek consensus]]></title>
+            <description><![CDATA[Theresa May is still seeking support for her deal in return for her resignation after MPs vote on other options.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-politics-47729773</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/uk-politics-47729773</guid>
+            <pubDate>Thu, 28 Mar 2019 12:28:56 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/CD6E/production/_106209525_parliament_27th_march_epa.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Wow Air failure strands thousands of passengers]]></title>
+            <description><![CDATA[The carrier says it has ceased operations and passengers should book with other airlines.]]></description>
+            <link>https://www.bbc.co.uk/news/business-47731043</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/business-47731043</guid>
+            <pubDate>Thu, 28 Mar 2019 12:25:23 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/D995/production/_106210755_r0pxb1no.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Two killed in 'senseless act' after gunman opens fire on Seattle street]]></title>
+            <description><![CDATA[A man shot at drivers and at a bus in what police describe as a "random, senseless act".]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47729726</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47729726</guid>
+            <pubDate>Thu, 28 Mar 2019 12:26:53 GMT</pubDate>
+            <media:thumbnail width="1920" height="1080" url="http://c.files.bbci.co.uk/A708/production/_106206724_de46.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[California tests earthquake alerts]]></title>
+            <description><![CDATA[People in Downtown Oakland, California received the first public earthquake alert in the US.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47729331</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47729331</guid>
+            <pubDate>Thu, 28 Mar 2019 04:24:51 GMT</pubDate>
+            <media:thumbnail width="1024" height="575" url="http://c.files.bbci.co.uk/EA9C/production/_106206006_p074swmg.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Jussie Smollett: Stop 'campaign' against Empire star, lawyer says]]></title>
+            <description><![CDATA[Smollett's lawyer accuses authorities of a "campaign" against him, despite the charges being dropped.]]></description>
+            <link>https://www.bbc.co.uk/news/newsbeat-47732733</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/newsbeat-47732733</guid>
+            <pubDate>Thu, 28 Mar 2019 12:13:05 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/152A2/production/_106209668_gettyimages-1138446129.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[India space: Has the country become a superpower in the stars?]]></title>
+            <description><![CDATA[Why is India in space and what is it doing there? BBC Reality Check takes a look.]]></description>
+            <link>https://www.bbc.co.uk/news/world-47706047</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-47706047</guid>
+            <pubDate>Thu, 28 Mar 2019 00:33:25 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/1FAE/production/_106201180_p074qtn6.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Apology for Hispanic judge told to 'speak English']]></title>
+            <description><![CDATA[A Texas official criticised a county judge for answering questions in Spanish during a news conference.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47727997</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47727997</guid>
+            <pubDate>Wed, 27 Mar 2019 20:30:42 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/6554/production/_106204952_48392006_1511625432273328_5331469460031143936_n.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[The gene mutation that means woman feels no pain]]></title>
+            <description><![CDATA[Jo Cameron is one of two people on Earth known to have a mutation that means she feels almost no pain.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-scotland-highlands-islands-47719718</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/uk-scotland-highlands-islands-47719718</guid>
+            <pubDate>Thu, 28 Mar 2019 00:00:21 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/1122E/production/_106209107_jocameron_rex.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[BBC pays damages to Ukraine President Petro Poroshenko over report]]></title>
+            <description><![CDATA[The corporation apologises over an incorrect report claiming a payment was made to arrange talks with Donald Trump.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47719166</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47719166</guid>
+            <pubDate>Thu, 28 Mar 2019 10:33:03 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/0BB8/production/_106200030_gettyimages-1033230830.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Scientology church shooting: Man with sword shot dead in LA]]></title>
+            <description><![CDATA[Two police officers were wounded by gunfire during the fatal shooting in Los Angeles.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47732393</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47732393</guid>
+            <pubDate>Thu, 28 Mar 2019 12:30:19 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/F9EC/production/_106208936_8b363853-fc83-41d5-b0c9-b6a16a851cc1.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Bangladesh fire: Deadly blaze hits Banani building in Dhaka]]></title>
+            <description><![CDATA[At least seven people die and dozens are feared trapped in an office block in Bangladesh's capital.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-47733063</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-asia-47733063</guid>
+            <pubDate>Thu, 28 Mar 2019 11:39:20 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/158F7/production/_106211388_tv053215566.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Charlottesville murderer Fields pleads guilty to hate crimes]]></title>
+            <description><![CDATA[James Alex Fields was jailed last December after driving his car into a crowd of counter-protesters.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47727275</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47727275</guid>
+            <pubDate>Wed, 27 Mar 2019 21:30:07 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/ABE5/production/_104550044_041087482.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Migrant ship capture: Maltese armed forces take control of hijacked tanker]]></title>
+            <description><![CDATA[A special operations team seizes the tanker hijacked by migrants who did not want to return to Libya.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-47730693</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-europe-47730693</guid>
+            <pubDate>Thu, 28 Mar 2019 11:58:11 GMT</pubDate>
+            <media:thumbnail width="768" height="432" url="http://c.files.bbci.co.uk/102DE/production/_106207266_mediaitem106207265.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Grindr 'up for sale on security grounds']]></title>
+            <description><![CDATA[The app's Chinese owner, Kunlun Group, is reportedly seen as a security risk by US authorities.]]></description>
+            <link>https://www.bbc.co.uk/news/business-47735043</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/business-47735043</guid>
+            <pubDate>Thu, 28 Mar 2019 11:39:13 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/CDA2/production/_103224625_grindr1.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Boeing announces fixes for its 737 Max aircraft]]></title>
+            <description><![CDATA[The US planemaker is making cockpit alterations in the plane model involved in two fatal crashes.]]></description>
+            <link>https://www.bbc.co.uk/news/business-47722258</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/business-47722258</guid>
+            <pubDate>Thu, 28 Mar 2019 09:24:21 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/421F/production/_104072961_mediaitem104071630.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Woman gives birth, has twins a month later]]></title>
+            <description><![CDATA[Doctors in Bangladesh performed a Caesarean on her after discovering she had twins in a second uterus.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-47729118</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-asia-47729118</guid>
+            <pubDate>Thu, 28 Mar 2019 11:12:36 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/1034C/production/_106208366_babyfootgetty.gif"/>
+        </item>
+        <item>
+            <title><![CDATA[Garfield phones beach mystery finally solved after 35 years]]></title>
+            <description><![CDATA[For years, novelty phones appear on Brittany's beaches - but the source is finally found.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-47732553</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-europe-47732553</guid>
+            <pubDate>Thu, 28 Mar 2019 12:11:54 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/DBED/production/_106210365_44924191_10217244206765736_7855175247975153664_o.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Alexandria Ocasio-Cortez and Mike Lee talk 'Green New Deal']]></title>
+            <description><![CDATA[Star Wars and climate change - two lawmakers deliver very different views on the "Green New Deal".]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47726957</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47726957</guid>
+            <pubDate>Wed, 27 Mar 2019 18:05:17 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/127A/production/_106203740_p074rkrn.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA['World's longest salt cave' discovered in Israel]]></title>
+            <description><![CDATA[The cave is near the desert site where the Bible says Lot’s wife was turned into a pillar of salt]]></description>
+            <link>https://www.bbc.co.uk/news/world-middle-east-47731943</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-middle-east-47731943</guid>
+            <pubDate>Thu, 28 Mar 2019 10:36:24 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/E8BC/production/_106208595_mediaitem106208594.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Has Brexit changed the city I knew?]]></title>
+            <description><![CDATA[Auliya Atrafi came to Hull as an asylum seeker from Afghanistan. He returns to the city to see if it's still a welcoming place for immigrants.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-47726847</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/uk-47726847</guid>
+            <pubDate>Thu, 28 Mar 2019 00:31:45 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/D85E/production/_106209355_p074td8d.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Artificial intelligence used in kitchen bin]]></title>
+            <description><![CDATA[Can technology help to cut the vast amounts of food that never gets eaten?]]></description>
+            <link>https://www.bbc.co.uk/news/business-47708059</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/business-47708059</guid>
+            <pubDate>Thu, 28 Mar 2019 00:29:18 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/0BC2/production/_106201030_p074qtcb.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Internet access in Africa - Are mesh networks the future?]]></title>
+            <description><![CDATA[Residents in a rural South African community get cheap online access from a network they own and run.]]></description>
+            <link>https://www.bbc.co.uk/news/world-africa-47723967</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-africa-47723967</guid>
+            <pubDate>Thu, 28 Mar 2019 00:22:57 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/69DC/production/_106200172_p074qjv5.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Should cats be culled to stop extinctions?]]></title>
+            <description><![CDATA[Scientists call for a widespread cull of feral cats, rats, goats and pigs to save endangered species.]]></description>
+            <link>https://www.bbc.co.uk/news/science-environment-47721807</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/science-environment-47721807</guid>
+            <pubDate>Thu, 28 Mar 2019 00:46:22 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/742C/production/_106204792_gettyimages-feralcat.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Entebbe pilot Michel Bacos who stayed with hostages dies]]></title>
+            <description><![CDATA[Michel Bacos was hailed a hero for refusing to abandon his passengers during the 1976 hostage crisis.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-47719367</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-europe-47719367</guid>
+            <pubDate>Wed, 27 Mar 2019 11:32:36 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/67BF/production/_106195562_gettyimages-957656984.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Explaining the US measles outbreak]]></title>
+            <description><![CDATA[According to officials there are 314 cases of measles currently reported in the US.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47727287</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47727287</guid>
+            <pubDate>Wed, 27 Mar 2019 18:19:24 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/2E9A/production/_106203911_p074rnhr.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Beto O'Rourke and the proliferation of white privilege accusations]]></title>
+            <description><![CDATA[The meaning of the term has evolved over the decades along with the way it is used and by whom.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47712096</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47712096</guid>
+            <pubDate>Wed, 27 Mar 2019 21:24:15 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/CE68/production/_106204825_gettyimages-1136005419.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Can you stop your parents sharing photos of you online?]]></title>
+            <description><![CDATA[Gwyneth Paltrow shared a photo of her daughter Apple without her permission - was she wrong?]]></description>
+            <link>https://www.bbc.co.uk/news/world-47722427</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-47722427</guid>
+            <pubDate>Thu, 28 Mar 2019 00:36:46 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/6193/production/_106197942_mediaitem106197941.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Decline of soap operas: Was OJ Simpson to blame?]]></title>
+            <description><![CDATA[After peaking in the 1990s, there are now only four daytime soap operas on air in the US.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47585335</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47585335</guid>
+            <pubDate>Wed, 27 Mar 2019 18:43:26 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/5C93/production/_106199632_dallas_976alamy.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Weary EU press say they're appalled by Brexit deadlock]]></title>
+            <description><![CDATA[There is harsh criticism and a sense of weariness over the UK parliament's Brexit paralysis]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-47732993</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-europe-47732993</guid>
+            <pubDate>Thu, 28 Mar 2019 10:21:52 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/11F76/production/_106209537_brexit_euro_comp_28mar.png"/>
+        </item>
+        <item>
+            <title><![CDATA[One small step for man, but women still have to leap]]></title>
+            <description><![CDATA[Nasa does not have enough right-sized spacesuits for a planned all-female spacewalk, so a man will step in.]]></description>
+            <link>https://www.bbc.co.uk/news/blogs-trending-47717937</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/blogs-trending-47717937</guid>
+            <pubDate>Thu, 28 Mar 2019 10:40:28 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/1474D/production/_106198738_hague_mcclain_koch-1.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA['I had my misgivings about going abroad for surgery']]></title>
+            <description><![CDATA[Studies show that a growing number of people are going overseas for medical treatment.]]></description>
+            <link>https://www.bbc.co.uk/news/business-47704954</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/business-47704954</guid>
+            <pubDate>Thu, 28 Mar 2019 00:08:08 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/11916/production/_106185917_surgeons1.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Why Erdogan's big ambitions could undo him]]></title>
+            <description><![CDATA[The president's expensive projects may cost him at the polls as ordinary Turks struggle, writes Mark Lowen.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-47719368</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-europe-47719368</guid>
+            <pubDate>Thu, 28 Mar 2019 00:44:39 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/128EA/production/_106201067_gettyimages-584035544.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[How many cigarettes in a bottle of wine?]]></title>
+            <description><![CDATA[A study suggests it is 10 for women and five for men, in a bid to communicate the health risks of drinking.]]></description>
+            <link>https://www.bbc.co.uk/news/health-47723704</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/health-47723704</guid>
+            <pubDate>Thu, 28 Mar 2019 00:45:03 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/A23A/production/_106203514_gettyimages-523998961.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Supreme Court and gerrymandering: The history of election fixing]]></title>
+            <description><![CDATA[As the US Supreme Court hears arguments about fixing election districts, a look at the man who did it first.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-46062154</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-46062154</guid>
+            <pubDate>Thu, 01 Nov 2018 19:28:46 GMT</pubDate>
+            <media:thumbnail width="1024" height="575" url="http://c.files.bbci.co.uk/6CF5/production/_104139872_p06qjvm3.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Cheollima Civil Defense: What is known about North Korean embassy group]]></title>
+            <description><![CDATA[Despite a website and YouTube channel, little is known about the Cheollima Civil Defense group.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-47717525</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-asia-47717525</guid>
+            <pubDate>Thu, 28 Mar 2019 10:11:07 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/9069/production/_106196963_logo.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Ole Gunnar Solskjaer appointed Manchester United manager]]></title>
+            <description><![CDATA[Manchester United appoint Ole Gunnar Solskjaer as permanent manager on a three-year contract.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/47691296</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/sport/football/47691296</guid>
+            <pubDate>Thu, 28 Mar 2019 09:47:39 GMT</pubDate>
+            <media:thumbnail width="1600" height="900" url="http://c.files.bbci.co.uk/B9DC/production/_106208574_ole_gunnar_solskjaer_index.png"/>
+        </item>
+        <item>
+            <title><![CDATA[Jos Buttler: 'Mankad' dismissal not 'in the spirit of the game' - MCC]]></title>
+            <description><![CDATA[The MCC say the "Mankading" dismissal of Jos Buttler by Ravichandran Ashwin was not "in the spirit of the game."]]></description>
+            <link>https://www.bbc.co.uk/sport/cricket/47728182</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/sport/cricket/47728182</guid>
+            <pubDate>Wed, 27 Mar 2019 21:59:46 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/5DF2/production/_106205042_rashwin_getty.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[England women thrash Sri Lanka to seal T20 series whitewash]]></title>
+            <description><![CDATA[England women make their second highest Twenty20 score as they beat Sri Lanka by 96 runs to complete a 3-0 series whitewash.]]></description>
+            <link>https://www.bbc.co.uk/sport/cricket/47730665</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/sport/cricket/47730665</guid>
+            <pubDate>Thu, 28 Mar 2019 08:41:03 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/123AE/production/_106207647_england_getty.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[How social media charted Solskjaer's journey - and vote if this is the right appointment]]></title>
+            <description><![CDATA[A social media timeline of how Ole Gunnar Solskjaer went from a 'joke' appointment to giving Man Utd fans the 'best night since Fergie retired'.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/47684679</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/sport/football/47684679</guid>
+            <pubDate>Thu, 28 Mar 2019 09:50:16 GMT</pubDate>
+            <media:thumbnail width="933" height="600" url="http://c.files.bbci.co.uk/FDC8/production/_106186946_solksjaer.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[The amateur sleuth who searched for a body - and found one]]></title>
+            <description><![CDATA[An indigenous mother goes missing in North Dakota. Why did it take a volunteer group to bring her home?]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47627701</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47627701</guid>
+            <pubDate>Mon, 25 Mar 2019 20:17:54 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/16F37/production/_106170049_lissayellowbird-chasecloseup.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Preventable deaths? The story of Grenfell Tower flat 113]]></title>
+            <description><![CDATA[Firefighters risked their lives to save residents of Grenfell Tower, but could they have rescued more than they did?]]></description>
+            <link>https://www.bbc.co.uk/news/stories-47669937</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/stories-47669937</guid>
+            <pubDate>Mon, 25 Mar 2019 01:31:26 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/2B6B/production/_106151111_silhouette_towers_reuters97.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Christchurch mosque shootings: The lives lost and the world they revealed]]></title>
+            <description><![CDATA[From optimistic refugees to a couple deeply in love, Christchurch was meant to be safe for a new start.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-47650948</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-asia-47650948</guid>
+            <pubDate>Fri, 22 Mar 2019 00:02:41 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/4210/production/_106121961_ansialibava.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Celebrity parents and the bizarre 'cheating' scandal]]></title>
+            <description><![CDATA[It is said to be biggest university admissions scam in US history. How did it all unfold?]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-47585336</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/world-us-canada-47585336</guid>
+            <pubDate>Fri, 15 Mar 2019 22:49:01 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/7EC6/production/_106045423_huffman4.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA['Reading bedtime stories helped me survive prison']]></title>
+            <description><![CDATA[For many prisoners the worst part of the experience is the separation from their families. Recording stories for children can help to bridge the gap.]]></description>
+            <link>https://www.bbc.co.uk/news/stories-47559626</link>
+            <guid isPermaLink="true">https://www.bbc.co.uk/news/stories-47559626</guid>
+            <pubDate>Sat, 23 Mar 2019 00:43:45 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/302E/production/_106143321_lewishardydoghouseboxinggym-1u4a9626.jpg"/>
+        </item>
+    </channel>
+</rss>
