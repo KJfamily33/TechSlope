@@ -1,6 +1,11 @@
 .page-enter-active, .page-leave-active {
-  transition:  transform .5s;
+  transition: opacity .5s
 }
 .page-enter, .page-leave-to {
-  transform: translateY(-100%);
+  opacity: 0;
+  // transform: translateY(-100%);
 }
+
+// .page-enter-active .homeGradient {
+//   opacity: 100%;
+// }
