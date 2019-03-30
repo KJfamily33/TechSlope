@@ -17,16 +17,19 @@
 </div>
   <v-container>
     <v-layout>
+      <UsageWidgets_small/>
     </v-layout>
   </v-container>
 </div>
 </template>
 
 <script>
+import UsageWidgets_small from "@/components/UsageWidget_small";
 
 export default {
   name: "APIs",
   components: {
+    UsageWidgets_small
   },
 }
 </script>
