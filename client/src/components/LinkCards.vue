@@ -5,12 +5,10 @@
     wrap
     class="white--text"
     >
-    <v-flex xs4 mb-4 v-for="(card, index) in cards" :key="index">
+    <v-flex md12 lg4 mb-4 px-4 v-for="(card, index) in cards" :key="index">
       <v-card
       light
       :style="{ borderLeft: '5px solid' + card.theme }"
-      max-width="500"
-      mx-4
       >
       <v-card-title :href="card.link">
         <v-icon
