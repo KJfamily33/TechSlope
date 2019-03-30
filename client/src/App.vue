@@ -46,47 +46,80 @@
       <v-tab-item
       :key="login"
       >
-            <v-container>
-              <v-flex xs-12>
-      <v-form
-      ref="form"
-      v-model="valid"
-      lazy-validation
-      >
-      <v-text-field
-      v-model="name"
-      :counter="10"
-      :rules="nameRules"
-      label="Name"
-      required
-      ></v-text-field>
+      <v-container>
+        <v-flex xs-12>
+          <v-form
+          ref="form"
+          v-model="valid"
+          lazy-validation
+          >
+          <v-text-field
+          v-model="email"
+          :rules="emailRules"
+          label="E-mail"
+          required
+          ></v-text-field>
 
-      <v-text-field
-      v-model="email"
-      :rules="emailRules"
-      label="E-mail"
-      required
-      ></v-text-field>
-      <v-btn
-      color="green"
-      dark
-      @click="resetValidation"
-      >
-      Login
-    </v-btn>
-  </v-form>
-  <v-btn block color="red" dark>Google</v-btn>
-  <v-btn block color="blue" dark>LinkedIn</v-btn>
-  <v-btn block color="blue" dark>Facebook</v-btn>
-</v-flex xs-12>
-</v-container>
+          <v-text-field
+          v-model="password"
+          label="Password"
+          required
+          ></v-text-field>
+          <v-btn
+          color="green"
+          dark
+          @click="resetValidation"
+          >
+          Login
+        </v-btn>
+      </v-form>
+      <v-btn block color="red" dark>Google</v-btn>
+      <v-btn block color="blue" dark>Facebook</v-btn>
+    </v-flex xs-12>
+  </v-container>
 </v-tab-item>
 <v-tab-item
 :key="signup"
 >
-<v-card flat>
-  <v-card-text>{{ text }}</v-card-text>
-</v-card>
+<v-container>
+  <v-flex xs-12>
+    <v-text class="subheader">Welcome</v-text>
+    <v-form
+    ref="form"
+    v-model="valid"
+    lazy-validation
+    >
+    <v-text-field
+    v-model="name"
+    :rules="nameRules"
+    label="Name"
+    required
+    ></v-text-field>
+
+    <v-text-field
+    v-model="email"
+    :rules="emailRules"
+    label="E-mail"
+    required
+    ></v-text-field>
+
+    <v-text-field
+    v-model="password"
+    :counter="8"
+    label="Password"
+    required
+    ></v-text-field>
+
+    <v-btn
+    color="green"
+    dark
+    @click="resetValidation"
+    >
+    Signup
+  </v-btn>
+</v-form>
+</v-flex>
+</v-container>
 </v-tab-item>
 </v-tabs>
 
