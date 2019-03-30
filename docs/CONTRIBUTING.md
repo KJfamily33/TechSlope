@@ -14,7 +14,7 @@ Install the following for the development enviorment...
 
 ## Development
 
-1. The repository is first cloned with `git clone https://github.com/GoCodeColorado/TechSlope.git`.
+1. The repository is first cloned with `git clone https://github.com/GoCodeColorado/TechSlope.git && cd TechSlope`.
 
 2. All the dependencies from [NPM](https://docs.npmjs.com/about-npm/) will need to be installed by running `npm run installProject`.  **simply runs `npm install` in both client and server directory*
 
