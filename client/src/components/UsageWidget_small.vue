@@ -1,42 +1,45 @@
 <template>
+    <v-flex xs12>
+        <v-card max-width="400" class="mx-auto">
+            <v-card-title>
+                <span class="title text-uppercase">
+                    <span>Property</span>
+                    <span class="font-weight-light">Usage</span>
+                </span>
+            </v-card-title>
+            <v-card-text class="text-xs-center headline">
+                <v-icon large left>
+                    {{ usageIcon }}
+                </v-icon>
+                <span>
+                    {{ response.usages[0].name + ": " + response.usages[0].score*100 }}
+                </span>
+            </v-card-text>
+            <v-card-actions>
+                <v-list-tile class="grow">
+                    <v-list-tile-avatar color="grey darken-3">
+                        <div id="mapName" class="google-map elevation-6">
+                          {{ GoogleMap.generateMap() }}
+                        </div>
+                    </v-list-tile-avatar>
 
-  <v-flex xs12>
-    <v-card max-width="400" class="mx-auto" >
-      <v-card-title><span class="title text-uppercase"><span>Property</span>
-        <span class="font-weight-light">Usage</span></span></v-card-title>
-        <v-card-text class="text-xs-center headline">
-          <v-icon large left>
-            {{ usageIcon }}
-          </v-icon>
-          <span>
-            {{ response.usages[0].name + ": " + response.usages[0].score*100 }}
-          </span>
-        </v-card-text>
-        <v-card-actions>
-          <v-list-tile class="grow">
-            <v-list-tile-avatar color="grey darken-3">
-              <v-img class="elevation-6"
-              src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=39.070060,-108.555690&fov=90&heading=235&pitch=10&key=AIzaSyBn9dpIQ_h43X4UYjRGkaoy-_iL2iE1wvs"
-              ></v-img>
-            </v-list-tile-avatar>
+                    <v-list-tile-content>
+                        <v-list-tile-title>{{ response.match }}</v-list-tile-title>
+                    </v-list-tile-content>
 
-            <v-list-tile-content>
-              <v-list-tile-title>{{ response.match }}</v-list-tile-title>
-            </v-list-tile-content>
-
-            <v-layout align-center justify-end>
-            <v-icon class="mr-1">mdi-share-variant</v-icon>
-            <span class="subheading">45</span>
-          </v-layout>
-        </v-list-tile>
-      </v-layout>
-    </v-card-actions>
-  </v-card>
-</v-flex>
-
+                    <v-layout align-center justify-end>
+                        <v-icon class="mr-1">mdi-share-variant</v-icon>
+                        <span class="subheading">45</span>
+                    </v-layout>
+                </v-list-tile>
+            </v-card-actions>
+        </v-card>
+    </v-flex>
 </template>
 
 <script>
+import GoogleMap from '@/components/GoogleMap'
+
 export default {
   name: "usageWidget_small",
   data: () => ({
@@ -47,17 +50,15 @@ export default {
       switch (this.response.usages[0].name) {
         case "Health Care":
           return "mdi-medical-bag";
-          break;
         case "Restaurant":
           return "mdi-food";
-          break;
         default:
           return "mdi-help";
       }
     }
   },
   methods: {
-
+    // Inserts KML data into a visible layer
   }
-}
+};
 </script>
