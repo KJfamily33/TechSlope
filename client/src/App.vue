@@ -26,7 +26,7 @@
     <transition name="page" mode="out-in">
       <router-view/>
     </transition>
-    <v-dialog
+    <!-- <v-dialog
     v-model="loginDialog"
     max-width="290"
     >
@@ -124,7 +124,7 @@
 </v-tabs>
 
 </v-card>
-</v-dialog>
+</v-dialog> -->
 </v-content>
 </v-app>
 </template>
@@ -136,6 +136,9 @@ export default {
   data () {
     return {
       loginDialog: false,
+      password: "",
+      email: "",
+      name: ""
     }
   }
 }
