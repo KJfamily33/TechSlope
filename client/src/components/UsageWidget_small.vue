@@ -8,6 +8,7 @@
               style="width:100%;  height: 400px;"
             >
               <gmap-marker
+              ref="'marker' + index"
                 :key="index"
                 v-for="(m, index) in markers"
                 :position="m.position"
@@ -61,10 +62,10 @@ export default {
     center: {lat: 39.070031099999994, lng: -108.5556852},
     places: [],
     currentPlace: null,
-    markers: [{
+    markers: [ { position: {
       lat: 39.070031099999994,
       lng: -108.5556852
-    }],
+    }}],
     map: null,
     bounds: null,
     geocoder: null
@@ -125,6 +126,7 @@ export default {
   },
   mounted: function() {
     this.geolocate();
+    this.addMarker();
   }
 };
 </script>

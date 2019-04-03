@@ -32,7 +32,7 @@ Vue.use(VueGoogleMaps, {
   //// import {GmapMarker} from 'vue2-google-maps/src/components/marker'
   //// Vue.component('GmapMarker', GmapMarker)
   //// then disable the following:
-  // installComponents: true,
+  installComponents: true,
 })
 
 Vue.config.productionTip = false;
