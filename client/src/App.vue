@@ -37,10 +37,10 @@
       light
       slider-color="grey"
       >
-      <v-tab ripple :key="login">
+      <v-tab ripple key="login">
         Login
       </v-tab>
-      <v-tab ripple :key="signup">
+      <v-tab ripple key="signup">
         Sign Up
       </v-tab>
       <v-tab-item
@@ -113,7 +113,7 @@
     <v-btn
     color="green"
     dark
-    @click="resetValidation"
+    // @click="resetValidation"
     >
     Signup
   </v-btn>
@@ -136,6 +136,12 @@ export default {
   data () {
     return {
       loginDialog: false,
+      password: "",
+      email: "",
+      name: "",
+      emailRules: "",
+      nameRules: "",
+      valid: false,
     }
   }
 }
