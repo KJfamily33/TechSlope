@@ -1,4 +1,4 @@
-## ![Our Logo](./assets/cover_header.png)
+## ![Our Logo](./assets/Logo7.png)
 # Property Usage API
 
 Commercial Real Estate Development Predictive Analytics
