@@ -8,7 +8,14 @@ Business entity address
 2.3. Whether it is in an opportunity zone/enterprise zone  
 
 ### 3. Method
-3.1 Machine learning algorithm: Combination of score prediction and multi-label classification (mixed-use)
+3.1 Score breakdown:  
+3.1.1 20% legal/physical permissions (the possiblity to build/use this property type)  
+3.1.2 50% usage trend (the most common currrent usage of similar property)  
+3.1.3 30% business success level (how likely to be a successful business)  
+3.2 Machine learning algorithm  
+3.2.1 None - rule based  
+3.2.2 Deep learning for a multi-label classification   
+3.2.3 Linear regression for score prediction  
 
 ### 4. Data Used
 4.1 Coordinate  
