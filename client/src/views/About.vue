@@ -1,5 +1,5 @@
 <template>
-  <div id="apis">
+  <div id="About">
     <div class="homeGradient" style="margin-top: -64px;">
     <v-container style="padding-top: 7em;">
       <v-layout
@@ -15,10 +15,9 @@
     </v-container>
     </div>
     <v-container>
-      <v-flex d-flex xs12 sm6 md6>
+      <v-flex d-flex xs12 sm6 md12>
+        <v-flex d-flex cs12 sm6 md6>
         <v-card color=#FAFAFA class="elevation-0">
-          <v-card-title primary class="title"></v-card-title>
-          <v-card-text>{{ lorem }}</v-card-text>
           <h1> Our Mission </h1>
           <p> PropertyUsage empowers investors to
             profitability by finding the best use for commercial real estate property. </p>
@@ -38,6 +37,23 @@
             </ul>
           </p>
         </v-card>
+        </v-flex>
+        <v-layout  column align-center justify-center>
+        <v-card color=#FAFAFA class = "elevation-0">
+          <h1> Supporting Information </h1>
+          <h3><a href="https://data.colorado.gov/Transportation/Road-Traffic-Counts-in-Colorado-2017/uzf4-3qtt">  Colorado Traffic For 2017</a></h3>
+          <h3><a href="https://data.colorado.gov/Economic-Growth/Enterprise-Zones-1-1-2019/apxk-9kv4">Colorado Enterprise Zones</a></h3>
+          <h3><a href="https://data.colorado.gov/Demographics/Population-Projections-in-Colorado/q5vp-adf3">Colorado Population Projections</a></h3>
+          <h3><a href="https://data.colorado.gov/dataset/OEDIT-Opportunity-Zoning-KMZ/7f2s-r574">Colorado Opportunity Zone Map</a></h3>
+        </v-card>
+        </v-layout>
+
+      </v-flex>
+      <v-flex d-flex xs12 sm6 md12>
+        <v-card color="#FAFAFA" class = "elevation-0">
+          <v-img
+              <img src="http://i68.tinypic.com/14ecbbb.jpg" width=1150 height=500 border="0" alt="Image and video hosting by TinyPic">
+        </v-card>
       </v-flex>
     </v-container>
   </div>
@@ -46,7 +62,7 @@
 <script>
 
 export default {
-  name: "APIs",
+  name: "About",
   components: {
   },
 }
