@@ -1,181 +1,267 @@
 <template>
+  <v-container>
     <v-flex xs12>
-        <v-card max-width="400" class="mx-auto">
-            <v-card-title>
+      <v-card width="80%" class="mx-auto">
+        <div id="neighborhood-map-content">
+          <v-card v-bind:width="widgetDimensions.width" v-bind:height="widgetDimensions.height" class="mx-auto">
+            <div id="card-wrapper">
+              <v-card-title>
                 <span class="title text-uppercase">
-                    <span>Property</span>
-                    <span class="font-weight-light">Usage</span>
+                  <span>Property</span>
+                  <span class="font-weight-light">Usage</span>
                 </span>
-            </v-card-title>
-            <v-card-text class="text-xs-center headline">
+              </v-card-title>
+              <v-card-text class="text-xs-center headline">
                 <v-icon large left>
-                    {{ usageIcon }}
+                  {{ usageIcon }}
                 </v-icon>
                 <span>
-                    {{ response.usages[0].name + ": " + response.usages[0].score*100 }}
+                  {{ (widgetSize=='Tiny'?'':response.usages[0].name + ": ") + response.usages[0].score*100 }}
                 </span>
-            </v-card-text>
-            <v-card-actions>
+              </v-card-text>
+              <v-card-actions>
                 <v-list-tile class="grow">
-                    <v-list-tile-avatar color="grey darken-3">
-                      <v-img class="elevation-6"
-                      src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=39.070060,-108.555690&fov=90&heading=235&pitch=10&key=AIzaSyBn9dpIQ_h43X4UYjRGkaoy-_iL2iE1wvs"
-                      ></v-img>
-                    </v-list-tile-avatar>
+                  <v-list-tile-avatar color="grey darken-3">
+                    <v-img class="elevation-6"
+                    src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=39.070060,-108.555690&fov=90&heading=235&pitch=10&key=AIzaSyBn9dpIQ_h43X4UYjRGkaoy-_iL2iE1wvs"
+                    ></v-img>
+                  </v-list-tile-avatar>
 
-                    <v-list-tile-content>
-                        <v-list-tile-title>{{ response.match }}</v-list-tile-title>
-                    </v-list-tile-content>
-                    <v-list-tile-content>
-                      <div class="google-map elevation-6" id="mapName">
-                        {{ this.map }}
-                      </div>
-                    </v-list-tile-content>
+                  <v-list-tile-content>
+                    <v-list-tile-title>{{ response.match }}</v-list-tile-title>
+                  </v-list-tile-content>
 
-                    <v-layout align-center justify-end>
-                        <v-icon class="mr-1">mdi-share-variant</v-icon>
-                        <span class="subheading">45</span>
-                    </v-layout>
+                  <v-layout align-center justify-end>
+                    <v-icon class="mr-1">mdi-share-variant</v-icon>
+                    <span class="subheading">45</span>
+                  </v-layout>
                 </v-list-tile>
-            </v-card-actions>
-        </v-card>
-    </v-flex>
+              </v-card-actions>
+              <div v-if="showMap">
+                <gmap-map :center="center" :zoom="18" ref="mapRef" :style="'width:100%;height:'+(showMap?this.widgetDimensions.height-188:0)+'px'">
+                  <gmap-marker ref="'marker' + index" :key="index" v-for="(m, index) in markers"
+                  :position="m.position" @click="center=m.position" ></gmap-marker>
+                  <gmap-polygon :paths="paths" :editable="true" @paths_changed="updateEdited($event)">
+                  </gmap-polygon>
+                </gmap-map>
+              </div>
+            </div>
+          </v-card>
+          <v-container>
+            <h3>Customize The Widget</h3>
+            <v-form name="tile-form" id="tile-form" onsubmit="return false">
+              <v-container>
+                <v-layout row wrap>
+                  <v-flex>
+                    <v-toolbar>
+                      <v-text-field label="Address:" clearable full-width v-model="response.match"></v-text-field>
+                      <v-divider class="mr-3" vertical></v-divider>
+                      <v-btn v-on:click="showMap=!showMap">{{showMap ? 'Hide' : 'Show'}} Map</v-btn>
+                    </v-toolbar>
+                    <v-toolbar>
+                      <v-btn-toggle v-model="widgetFormat" mandatory><v-btn flat v-for="n in widgetFormats" v-on:click="setWidgetFormat(n)" :value="n">{{n}}</v-btn></v-btn-toggle>
+                      <v-divider class="mr-3" vertical></v-divider>
+                      <v-btn-toggle v-model="widgetSize" mandatory><v-btn flat v-for="n in widgetSizes" v-on:click="setWidgetSize(n)" :value="n">{{n}}</v-btn></v-btn-toggle>
+                    </v-toolbar>
+                    <v-toolbar v-show="widgetSize==='Custom'">
+                      <v-text-field label="Width:" clearable v-model="widgetDimensions.width"></v-text-field>
+                      <v-divider class="mr-3" vertical></v-divider>
+                      <v-text-field label="Height:" clearable v-model="widgetDimensions.height"></v-text-field>
+                    </v-toolbar>
+                    <v-textarea outline disabled auto-grow label="Embeded code: Paste this code into your website to use our widget"
+                    value="<div>COMING SOON!</div>">
+                  </v-textarea>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-form>
+          <br clear="all">
+          <div id="next-steps-box">
+            <div class="left-half">
+              <h5>Next Steps</h5>
+              <div class="small-bullets">
+                <a class="sign-up-small" href="/login"></a>
+                <div class="bullet-mail">
+                  <div>
+                  </div>
+                  <a href="/professional/contact.php">Get more info</a>
+                </div>
+              </div>
+            </div>
+            <div class="right-half">
+              <h5>Learn More</h5>
+              <div class="small-bullets" style=" margin-left: 25px;">
+                <div class="bulletless"><a href="../Documentation">Why usage Score?</a></div>
+                <div class="bulletless"><a href="../pricing">Features &amp; Pricing</a></div>
+                <div class="bulletless"><a href="">See usage Score customers</a></div>
+                <div class="bulletless"><a href="">For Real Estate Professionals</a></div>
+              </div>
+            </div>
+            <br class="clear-all">
+          </div>
+        </v-container>
+      </div>
+    </v-card>
+  </v-flex>
+</v-container>
 </template>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
 <script>
 export default {
   name: "usageWidget_small",
   data: function() {
     return {
-    response: { match: "1003 Grand Ave., Grand Junction, CO 81501", usages: [ {name: "Health Care", score: 0.8}, {name: "Office", score: 0.2} ], details: { population: 2045, dailyTraffic: 5000, crimeRate: 1.1, medianIncome: 68.94, unemploymentRate: 5.2, povertyRate: 28.90, competing: { count: 1, business: [ {name: "Paladina Health Clinic", lat: 39.069010, lon: -108.561330}] }, opportunityZone: {name: "Mesa 2", link: "https://www.cdfifund.gov/Pages/Opportunity-Zones.aspx", details: "Low-Income Community: NMTC", censusTract: "08077000200", geoPoly: null } } },
-    mapName: this.name + "-map",
-    coordinates: {},
-    markerCoordinates: [{
-      latitude: 51.501527,
-      longitude: -0.1921837
-    }, {
-      latitude: 51.505874,
-      longitude: -0.1838486
-    }, {
-      latitude: 51.4998973,
-      longitude: -0.202432
-    }],
-    map: null,
-    bounds: null,
-    markers: [],
-    geocoder: new google.maps.Geocoder(),
-    styleEZ: {
-        fillColor: 'rgba(0,0,255,0.25)',
-        fillOpacity: 1.0,
-        strokeColor: 'darkgrey',
-        strokeOpacity: 1.0,
-        strokeWeight: 1,
-        visible: true
-      },
-    styleEZOZ: {
-        fillColor: 'rgb(214, 194, 118)',
-        fillOpacity: 0.62,
-        strokeColor: 'darkgrey',
-        strokeOpacity: 1.0,
-        strokeWeight: 1,
-        visible: true
-      },
-    styleOZ: {
-        fillColor: 'rgba(255,215,0,0.5)',
-        fillOpacity: 1.0,
-        strokeColor: 'darkslategrey',
-        strokeOpacity: 1.0,
-        strokeWeight: 1,
-        visible: true
-      }
+      response: { match: "1003 Grand Ave., Grand Junction, CO 81501", usages: [ {name: "Health Care", score: 0.8}, {name: "Office", score: 0.2} ], details: { population: 2045, dailyTraffic: 5000, crimeRate: 1.1, medianIncome: 68.94, unemploymentRate: 5.2, povertyRate: 28.90, competing: { count: 1, business: [ {name: "Paladina Health Clinic", lat: 39.069010, lon: -108.561330}] }, opportunityZone: {name: "Mesa 2", link: "https://www.cdfifund.gov/Pages/Opportunity-Zones.aspx", details: "Low-Income Community: NMTC", censusTract: "08077000200", geoPoly: null } } },
+      coordinates: {},
+      center: {lat: 39.070031099999994, lng: -108.5556852},
+      places: [],
+      currentPlace: null,
+      markers: [ { position: {
+        lat: 39.070031099999994,
+        lng: -108.5556852
+      }}],
+      map: null,
+      bounds: null,
+      geojson: null,
+      geocoder: null,
+      paths: [],
+      widgetDimensions: {width: 600, height: 400},
+      showMap: true,
+      widgetFormat: 'Square',
+      widgetSize: 'Med',
+      widgetFormats: ['Tall','Square','Wide'],
+      widgetSizes: ['Large','Med','Small','Tiny','Custom']
     };
   },
   computed: {
     usageIcon: function () {
       switch (this.response.usages[0].name) {
         case "Health Care":
-          return "mdi-medical-bag";
+        return "mdi-medical-bag";
         case "Restaurant":
-          return "mdi-food";
+        return "mdi-food";
         default:
-          return "mdi-help";
+        return "mdi-help";
       }
     }
   },
   methods: {
-    createMarker(map, coords) {
-      centerMapAt(map, coords);
-      setMapZoom(map, 13);
-
-      return new google.maps.Marker({
-        position: coords,
-        map: map
+    loadControls() {
+      this.$refs.mapRef.$mapObject.data.setControls(['Polygon']);
+    },
+    displayGeoJson() {
+      let results;
+      this.$refs.mymap.$mapObject.data.toGeoJson((geojson) => {
+        results = JSON.stringify(geojson, null, 2);
+      });
+      this.geojson = results;
+    },
+    updateEdited(mvcArray) {
+      let paths = [];
+      for (let i=0; i<mvcArray.getLength(); i++) {
+        let path = [];
+        for (let j=0; j<mvcArray.getAt(i).getLength(); j++) {
+          let point = mvcArray.getAt(i).getAt(j);
+          path.push({lat: point.lat(), lng: point.lng()});
+        }
+        paths.push(path);
+      }
+      this.edited = paths;
+    },
+    setPlace(place) {
+      this.currentPlace = place;
+    },
+    addMarker() {
+      if (this.currentPlace) {
+        const marker = {
+          lat: this.currentPlace.geometry.location.lat(),
+          lng: this.currentPlace.geometry.location.lng()
+        };
+        this.markers.push({ position: marker });
+        this.places.push(this.currentPlace);
+        this.center = marker;
+        this.currentPlace = null;
+      }
+    },
+    geolocate: function() {
+      this.geocoder = new google.maps.Geocoder();
+      this.geocoder.geocode({ address: this.response.match }, function (result, status) {
+        if (status == 'OK') {
+          this.coordinates = {lat: result[0].geometry.location.lat(), lng: result[0].geometry.location.lng()}
+          this.center = this.coordinates;
+          this.bounds = result[0].geometry.bounds;
+          console.log(this.bounds);
+        }
       });
     },
-
     // Move the center of the map
-    centerMapAt(map, coords) {
-      this.map.setCenter(coords);
+    centerMapAt(coords) {
+      this.center = coords;
     },
-
     // Set map zoom
-    setMapZoom(map, zoom) {
+    setMapZoom(zoom) {
       this.map.setZoom(zoom);
     },
-
-    // Degug fxn
-    LogToConsole(value) {
-      if (_DEBUG_) {
-        console.log(value);
+    setWidgetSize(size) {
+      this.widgetSize = size;
+      switch (size) {
+        case 'Large': {
+          this.widgetDimensions.width = 800;
+          this.widgetDimensions.height = 600;
+          this.setWidgetFormat(this.widgetFormat);
+          break;
+        }
+        case 'Med': {
+          this.widgetDimensions.width = 600;
+          this.widgetDimensions.height = 450;
+          this.setWidgetFormat(this.widgetFormat);
+          break;
+        }
+        case 'Small': {
+          this.widgetDimensions.width = 400;
+          this.widgetDimensions.height = 300;
+          this.setWidgetFormat(this.widgetFormat);
+          break;
+        }
+        case 'Tiny': {
+          this.widgetDimensions.width = 200;
+          this.widgetDimensions.height = 150;
+          this.setWidgetFormat(this.widgetFormat);
+          break;
+        }
       }
-    }
-  },
-  mounted: function() {
-    // Use Google Geocoder API to translate
-    // an address to GPS coordinates
-    const mapHtmlElement = document.getElementById(this.mapName)
-
-    this.geocoder.geocode({ address: this.response.match }, function (array, status) {
-      if (status === 'OK') {
-        this.coordinates = array[0].geometry.location;
-        this.coordinates.lat = (array[0].geometry.bounds.ma.j + array[0].geometry.bounds.ma.l) / 2.0;
-        this.coordinates.lng = (array[0].geometry.bounds.ga.j + array[0].geometry.bounds.ga.l) / 2.0;
-        console.log(this.coordinates);
-        if (this.map) {
-          if (this.coordinates) {
-            this.markers.Add(this.createMarker(map, coordinates));
+      console.log(this.widgetDimensions);
+    },
+    setWidgetFormat(format) {
+      this.widgetFormat = format;
+      switch (this.widgetFormat) {
+        case 'Tall': {
+          this.widgetDimensions = { width: Math.min(this.widgetDimensions.height, this.widgetDimensions.width),
+            height: Math.min(this.widgetDimensions.height, this.widgetDimensions.width) * 4/3};
+            break;
           }
-        }
-        else {
-          this.map = new google.maps.Map(mapHtmlElement, {
-            zoom: 7,
-            center: this.coordinates,
-            gestureHandling: 'cooperative'
-          });
-
-          // Create Data Layer for EZs
-          var dataLayerEZ = new google.maps.Data({ map: this.map, style: this.styleEZ });
-
-          // Create Data Layer for OZs
-          var dataLayerOZ = new google.maps.Data({ map: this.map, style: this.styleOZ });
-
-          // 1st) Add Enterprise Zone (EZ) data to visible layer
-          dataLayerEZ.loadGeoJson('https://data.colorado.gov/api/geospatial/k6js-8yuk?method=export&format=GeoJSON', null, function () {
-
-            // 2nd) Add Opportunity Zone (OZ) data to visible layer
-            //dataLayerOZ.loadGeoJson('https://gocodecolorado.github.io/BusinessIncentives/certoppzones.geojson', null, function () {
-
-              // 3rd) Add Legend to map
-              // map.controls[google.maps.ControlPosition.TOP_RIGHT].push(element("#legend")[0]);
-
-              if (this.coordinates) {
-                this.markers.Add(this.createMarker(this.map, this.coordinates));
+          case 'Square': {
+            this.widgetDimensions = { width: Math.min(this.widgetDimensions.height, this.widgetDimensions.width),
+              height: Math.min(this.widgetDimensions.height, this.widgetDimensions.width) };
+              break;
+            }
+            case 'Wide': {
+              this.widgetDimensions = { width: Math.min(this.widgetDimensions.height, this.widgetDimensions.width) * 4/3,
+                height: Math.min(this.widgetDimensions.height, this.widgetDimensions.width) };
+                break;
               }
-            //});
-          });
+            }
+            console.log(this.widgetFormat);
+          },
+          // Degug fxn
+          LogToConsole(value) {
+            console.log(value);
+          }
+        },
+        mounted: function() {
+          this.setWidgetSize(this.widgetSize);
+          this.geolocate();
+          this.addMarker();
         }
-      }
-    });
-  }
-};
-</script>
+      };
+      </script>
