@@ -10,8 +10,8 @@
       <v-spacer></v-spacer>
       <router-link to="apis"><v-btn flat >APIs</v-btn></router-link>
       <router-link to="documentation"><v-btn flat >Documentation</v-btn></router-link>
-      <router-link to="pricing"><v-btn flat >Pricing</v-btn></router-link>
       <router-link to="about"><v-btn flat >About</v-btn></router-link>
+      <router-link to="contact"><v-btn flat >Contact Us</v-btn></router-link>
       <v-spacer></v-spacer>
       <v-btn outline
       @click.stop="loginDialog = true"
