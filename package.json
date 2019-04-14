@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/GoCodeColorado/TechSlope/issues"
   },
-  "homepage": "https://github.com/GoCodeColorado/TechSlope#readme"
+  "homepage": "https://github.com/GoCodeColorado/TechSlope#readme",
+  "dependencies": {
+    "rss-parser": "^3.7.0"
+  }
 }

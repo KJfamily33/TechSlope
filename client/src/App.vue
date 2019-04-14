@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app light>
     <v-toolbar app color=transparent dark flat class="elevation-0">
       <v-toolbar-title class="text-uppercase">
         <router-link to="/" style="color: white">
@@ -10,8 +10,8 @@
       <v-spacer></v-spacer>
       <router-link to="apis"><v-btn flat >APIs</v-btn></router-link>
       <router-link to="documentation"><v-btn flat >Documentation</v-btn></router-link>
-      <router-link to="pricing"><v-btn flat >Pricing</v-btn></router-link>
       <router-link to="about"><v-btn flat >About</v-btn></router-link>
+      <router-link to="contact"><v-btn flat >Contact Us</v-btn></router-link>
       <v-spacer></v-spacer>
       <v-btn outline
       @click.stop="loginDialog = true"
@@ -20,7 +20,28 @@
       <v-icon>mdi-lock-outline</v-icon>
       <span class="text-uppercase mr-2">Login</span>
     </v-btn>
+    <v-toolbar-side-icon
+      class="hidden-md-and-up"
+      @click="drawer = true"
+    />
   </v-toolbar>
+  <v-navigation-drawer
+    v-model="drawer"
+    app
+    light
+    temporary
+    right
+  >
+    <v-list>
+      <v-list-tile
+        v-for="(link, i) in links"
+        :key="i"
+        :to="link.to"
+      >
+        <v-list-tile-title v-text="link.text" />
+      </v-list-tile>
+    </v-list>
+  </v-navigation-drawer>
 
   <v-content>
     <transition name="page" mode="out-in">
@@ -130,11 +151,15 @@
 </template>
 
 <script>
+import {
+  mapMutations
+} from 'vuex'
 
 export default {
   name: 'App',
   data () {
     return {
+      links: [ {to: "apis", text: "APIs"}, {to: "docs", text: "Documentation"}, {to: "pricing", text: "Pricing"}, {to: "about", text: "About"}],
       loginDialog: false,
       password: "",
       email: "",
@@ -142,6 +167,7 @@ export default {
       emailRules: "",
       nameRules: "",
       valid: false,
+      drawer: false,
     }
   }
 }
