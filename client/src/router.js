@@ -5,6 +5,7 @@ import APIs from "./views/APIs.vue";
 import Documentation from "./views/Documentation.vue";
 import Pricing from "./views/Pricing.vue";
 import About from "./views/About.vue";
+import Contact from "./views/Contact.vue";
 
 
 Vue.use(Router);
@@ -38,6 +39,11 @@ export default new Router({
       path: "/about",
       name: "about",
       component: About
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: Contact
     }
   ]
 });

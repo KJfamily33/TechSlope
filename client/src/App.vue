@@ -8,15 +8,10 @@
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn
-        v-for="(link, i) in links"
-        :key="i"
-        :to="link.to"
-        class="ml-0 hidden-sm-and-down"
-        flat
-      >
-        {{ link.text }}
-      </v-btn>
+      <router-link to="apis"><v-btn flat >APIs</v-btn></router-link>
+      <router-link to="documentation"><v-btn flat >Documentation</v-btn></router-link>
+      <router-link to="about"><v-btn flat >About</v-btn></router-link>
+      <router-link to="contact"><v-btn flat >Contact Us</v-btn></router-link>
       <v-spacer></v-spacer>
       <v-btn outline
       @click.stop="loginDialog = true"
