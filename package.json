@@ -19,5 +19,6 @@
   },
   "homepage": "https://github.com/GoCodeColorado/TechSlope#readme",
   "dependencies": {
+    "rss-parser": "^3.7.0"
   }
 }

@@ -52,7 +52,7 @@
       <v-flex d-flex xs12 sm6 md12>
         <v-card color="#FAFAFA" class = "elevation-0">
           <v-img
-              <img src="http://i68.tinypic.com/14ecbbb.jpg" width=1150 height=500 border="0" alt="Image and video hosting by TinyPic">
+              <img src="../assets/teamphoto.png" width=1000 height=500 border="0" alt="Image and video hosting by TinyPic">
         </v-card>
       </v-flex>
     </v-container>

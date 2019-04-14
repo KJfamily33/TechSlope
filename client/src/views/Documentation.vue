@@ -1,5 +1,6 @@
 <template>
   <div id="docs">
+    <div class="homeGradient" style="margin-top: -64px;"><div class="container" style="padding-top: 2.8em;"></div></div>
     <v-container>
       <p style="line-height: 1.3800000000000001; margin-top: 0pt; margin-bottom: 3pt;"><span style="font-size: 26pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">API Documentation</span></p>
       <h3 style="line-height: 1.3800000000000001; margin-top: 16pt; margin-bottom: 4pt;"><span style="font-size: 10pt; font-family: Arial; color: #434343; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">This will eventually be added to the documentation page on our site. With graphics and interactive code examples. </span><em><span style="font-size: 10pt; font-family: Arial; color: #434343; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Text in </span></em><em><span style="font-size: 10pt; font-family: Arial; color: #d9d9d9; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">light grey </span></em><em><span style="font-size: 10pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">is TBA.</span></em></h3>
@@ -66,6 +67,7 @@ export default {
   },
   data () {
     return {
+    }
   }
 }
 </script>
