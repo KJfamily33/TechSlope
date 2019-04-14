@@ -12,7 +12,7 @@
       >
       <v-card-title :href="card.link">
         <v-icon
-        :style="{ color: card.theme }"
+        :style="{ color: card.theme }" class="mr-1"
         >
         mdi-{{ card.icon }}
       </v-icon>
@@ -39,9 +39,9 @@
 export default {
   name: "linkCards",
   data: () => ({
-    cards: [{title: "Explore Our API", icon: "API", link: "about", theme: "#114fa5", content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."},
-    {title: "Documentation", icon: "book", link: "docs", theme: "#12a365", content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
-    {title: "Support", icon: "help", link: "support", theme: "#e1781c", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}]
+    cards: [{title: "Explore Our API", icon: "Database", link: "about", theme: "#114fa5", content: "Our API can return valuable data in making investment desicision. Check out the about page to see exactly where we compile our data from."},
+    {title: "Documentation", icon: "book", link: "docs", theme: "#12a365", content: "Our docmentation strives to be easy to understand with live examples, and several language options. Integrate PropertyUsage into your application today!"},
+    {title: "Support", icon: "help", link: "support", theme: "#e1781c", content: "Need help with using PropertyUsage or an indepth analysis on a property? We offer 24/7 email support, with replies in less than 24 hours."}]
   }),
   methods: {
     beforeEnter: function (el) {
