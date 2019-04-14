@@ -16,7 +16,8 @@ The REST API documentation is found [here.](./docs/API%20Documentation.md)
 ### Video
 
 [Loom Slideshow Presentation](https://www.loom.com/share/db106dbadc7f43e9a91f4af8d2c9ecd9)
-<video src="./docs/Presentation/TechSlope Presentation.mp4" width="320" height="200" controls preload></video>
+[![video](./docs/assets/imgs/videoPreview.png)](https://www.loom.com/share/db106dbadc7f43e9a91f4af8d2c9ecd9)
+
 
 ### Info
 
