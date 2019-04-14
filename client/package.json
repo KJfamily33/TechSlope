@@ -17,6 +17,7 @@
     "rss-parser": "^3.7.0",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
+    "vue2-google-maps": "^0.10.6",
     "vuetify": "^1.5.5",
     "vuex": "^3.0.1"
   },
