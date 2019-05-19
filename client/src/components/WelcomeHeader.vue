@@ -19,7 +19,7 @@
         <v-btn color="green white--text font-weight-normal">Get an API key</v-btn>
       </v-flex>
       <v-flex class="text-xs-left mt-5">
-        <h3 class="headline font-weight-light">API Demo</h3>
+        <h3 class="headline font-weight-light">Usage Search</h3>
         <SearchDemo/>
         </v-flex>
     </v-layout>
