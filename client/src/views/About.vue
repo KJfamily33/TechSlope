@@ -47,12 +47,63 @@
           <h3><a href="https://data.colorado.gov/dataset/OEDIT-Opportunity-Zoning-KMZ/7f2s-r574">Colorado Opportunity Zone Map</a></h3>
         </v-card>
         </v-layout>
-
       </v-flex>
-      <v-flex d-flex xs12 sm6 md12>
+      <H1>Our Team</h1>
+      <v-flex d-flex xs12>
+        <v-layout align-center justify-space-between row/>
+          <v-card color="#FAFAFA" class = "elevation-0">
+            <v-flex d-flex xs12>
+              <v-card color="#FAFAFA" class = "elevation-0">
+                <img src="http://i63.tinypic.com/2n1uoom.png">
+              </v-card>
+              <v-card color="#FAFAFA" class = "elevation-0">
+                <v-card-text><h2>Aaron Clymer</h2><h3>Software Developer</h3><a href="https://www.linkedin.com/in/aaronclymer?trk=people-guest_profile-result-card_result-card_full-click" target="_blank"><img src="http://i63.tinypic.com/2hej22a.png" border="0" alt="LinkedIn"></a></v-card-text>
+              </v-card>
+            </v-flex>
+          </v-card>
+          <v-card color="#FAFAFA" class = "elevation-0">
+            <v-flex d-flex xs12>
+              <v-card color="#FAFAFA" class = "elevation-0">
+                <img src="http://i66.tinypic.com/fnsdj8.png">
+              </v-card>
+              <v-card color="#FAFAFA" class = "elevation-0">
+                <v-card-text><h2>Adam Childs</h2><h3>Software Developer</h3><a href="https://www.linkedin.com/in/adam-childs-5791a5147?trk=people-guest_profile-result-card_result-card_full-click" target="_blank"><img src="http://i63.tinypic.com/2hej22a.png" border="0" alt="LinkedIn"></a></v-card-text>
+              </v-card>
+            </v-flex>
+          </v-card>
+          <v-card color="#FAFAFA" class = "elevation-0">
+            <v-flex d-flex xs12>
+              <v-card color="#FAFAFA" class = "elevation-0">
+                <img src="http://i64.tinypic.com/2qkp5cj.png">
+              </v-card>
+              <v-card color="#FAFAFA" class = "elevation-0">
+                <v-card-text><h2>Dax Hurley</h2><h3>Graphics / Video Designer</h3><a href="https://www.linkedin.com/in/daxhurley?trk=people-guest_profile-result-card_result-card_full-click" target="_blank"><img src="http://i63.tinypic.com/2hej22a.png" border="0" alt="LinkedIn"></a></v-card-text>
+              </v-card>
+            </v-flex>
+          </v-card>
+      </v-flex>
+      <p></p>
+      <v-flex d-flex xs12>
+        <v-layout align-center justify-space-between row/>
         <v-card color="#FAFAFA" class = "elevation-0">
-          <v-img
-              <img src="http://i68.tinypic.com/14ecbbb.jpg" width=1150 height=500 border="0" alt="Image and video hosting by TinyPic">
+          <v-flex d-flex xs12>
+            <v-card color="#FAFAFA" class = "elevation-0">
+              <img src="http://i68.tinypic.com/2wrjcep.png">
+            </v-card>
+            <v-card color="#FAFAFA" class = "elevation-0">
+              <v-card-text><h2>Leo / Meng Luo</h2><h3>Data Scientist</h3><img src="http://i63.tinypic.com/2hej22a.png" border="0" alt="LinkedIn"></a></v-card-text>
+            </v-card>
+          </v-flex>
+        </v-card>
+        <v-card color="#FAFAFA" class = "elevation-0">
+          <v-flex d-flex xs12>
+            <v-card color="#FAFAFA" class = "elevation-0">
+              <img src="http://i63.tinypic.com/2njdjya.png">
+            </v-card>
+            <v-card color="#FAFAFA" class = "elevation-0">
+              <v-card-text><h2>Marc Fiot</h2><h3>Software Architect / Developer</h3><a href="https://www.linkedin.com/in/marc-fiot?trk=people-guest_profile-result-card_result-card_full-click" target="_blank"><img src="http://i63.tinypic.com/2hej22a.png" border="0" alt="LinkedIn"></a></v-card-text>
+            </v-card>
+          </v-flex>
         </v-card>
       </v-flex>
     </v-container>
