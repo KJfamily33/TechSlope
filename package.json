@@ -4,7 +4,7 @@
   "description": "Location information API",
   "main": "app.js",
   "scripts": {
-    "start": "cd client && npm install && npm run build && cd ../server && npm install && node app.js",
+    "start": "cd server && npm install && node app.js",
     "installProject": "cd client && npm install && cd ../server && npm install",
     "dev": "cd client && npm serve",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/GoCodeColorado/TechSlope/issues"
   },
-  "homepage": "https://github.com/GoCodeColorado/TechSlope#readme"
+  "homepage": "https://github.com/GoCodeColorado/TechSlope#readme",
+  "dependencies": {
+    "rss-parser": "^3.7.0"
+  }
 }
