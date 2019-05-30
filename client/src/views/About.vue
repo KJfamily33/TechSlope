@@ -91,7 +91,7 @@
               <img src="http://i68.tinypic.com/2wrjcep.png">
             </v-card>
             <v-card color="#FAFAFA" class = "elevation-0">
-              <v-card-text><h2>Leo / Meng Luo</h2><h3>Data Scientist</h3><img src="http://i63.tinypic.com/2hej22a.png" border="0" alt="LinkedIn"></a></v-card-text>
+              <v-card-text><h2>Leo / Meng Luo</h2><h3>Data Scientist</h3<a href="https://www.linkedin.com/in/leo-archer-69964977/" target="_blank">><img src="http://i63.tinypic.com/2hej22a.png" border="0" alt="LinkedIn"></a></v-card-text>
             </v-card>
           </v-flex>
         </v-card>
